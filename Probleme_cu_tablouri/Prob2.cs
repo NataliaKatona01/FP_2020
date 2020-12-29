@@ -16,7 +16,7 @@ namespace Probleme_cu_tablouri
             int[] v = new int[100];
             Console.WriteLine("Introduceti lungimea vectorului: ");
             int n = int.Parse(Console.ReadLine());
-            
+
 
             for (int i = 1; i <= n; i++)
             {
@@ -31,8 +31,6 @@ namespace Probleme_cu_tablouri
             {
                 if(v[i] == k)
                     Console.WriteLine($"{k} se afla pe pozitia {i}");
-                else
-                    Console.WriteLine("-1");
             }
             
 

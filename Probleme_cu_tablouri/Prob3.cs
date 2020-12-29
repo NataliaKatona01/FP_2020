@@ -15,7 +15,7 @@ namespace Probleme_cu_tablouri
         {
             Console.WriteLine("Introduceti lungimea vectorului: ");
             int n = int.Parse(Console.ReadLine());
-            max()
+           
 
             Random rnd = new Random(100);
             int[] v = new int[100];
@@ -26,10 +26,6 @@ namespace Probleme_cu_tablouri
             }
             //for (int i = 1; i <= n; i++)
             
-                Max = Array.Max(v);
-                Array.
-            
-            Console.WriteLine($"Max = {Max}");
         }
 
         private static void max()

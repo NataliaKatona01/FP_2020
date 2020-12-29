@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Probleme_cu_tablouri.Prob3</StartupObject>
+    <StartupObject>Probleme_cu_tablouri.Prob14</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -47,9 +47,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Prob1.cs" />
+    <Compile Include="Prob10.cs" />
+    <Compile Include="Prob11.cs" />
+    <Compile Include="Prob12.cs" />
+    <Compile Include="Prob13.cs" />
+    <Compile Include="Prob14.cs" />
     <Compile Include="Prob2.cs" />
     <Compile Include="Prob3.cs" />
     <Compile Include="Prob4.cs" />
+    <Compile Include="Prob5.cs" />
+    <Compile Include="Prob6.cs" />
+    <Compile Include="Prob7.cs" />
+    <Compile Include="Prob8.cs" />
+    <Compile Include="Prob9.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

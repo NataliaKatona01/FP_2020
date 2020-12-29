@@ -12,7 +12,7 @@ namespace Probleme_cu_tablouri
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Introduceti lungimea vectorului:");
+            Console.Write("Introduceti lungimea vectorului: ");
             int n = int.Parse(Console.ReadLine());
             int[] v = new int[100];
             int suma = 0;

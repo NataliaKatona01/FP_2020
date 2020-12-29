@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Probleme_cu_secvente
 {
-    class Program
+    class Prob1
     {
         //Se da o secventa de n numere. Sa se determine cate din ele sunt pare.
 

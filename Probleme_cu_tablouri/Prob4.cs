@@ -13,7 +13,20 @@ namespace Probleme_cu_tablouri
 
         static void Main(string[] args)
         {
-            
+            Console.Write("Lungimea vectorului: ");
+            int n = int.Parse(Console.ReadLine());
+            int min, max;
+            int m = int.Parse(Console.ReadLine());
+            min = m; max = m;
+            for (int i = 0; i < n; i++)
+            {
+                int nr = int.Parse(Console.ReadLine());
+                if (nr < min)
+                    min = nr;
+                if (nr > max)
+                    max = nr;
+            }
+            Console.WriteLine($"Cea mai mica valoare din vector este {min}, iar cea mai mare este {max}");
         }
     }
 }

@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Probleme_cu_secvente.Prob13</StartupObject>
+    <StartupObject>Probleme_cu_secvente.Prob17</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -51,6 +51,9 @@
     <Compile Include="Prob12.cs" />
     <Compile Include="Prob13.cs" />
     <Compile Include="Prob14.cs" />
+    <Compile Include="Prob15.cs" />
+    <Compile Include="Prob16.cs" />
+    <Compile Include="Prob17.cs" />
     <Compile Include="Prob2.cs" />
     <Compile Include="Prob3.cs" />
     <Compile Include="Prob4.cs" />
@@ -59,7 +62,7 @@
     <Compile Include="Prob7.cs" />
     <Compile Include="Prob8.cs" />
     <Compile Include="Prob9.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Prob1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
