@@ -17,14 +17,13 @@ namespace Probleme_cu_tablouri
             int n = int.Parse(Console.ReadLine());
             int[] v = new int[100];
             Random rnd = new Random();
-            int x;
             for (int i = 0; i < n; i++)
             {
                 v[i] = rnd.Next(100);
                 if (v[i] == 0)
                 {
-                    v[n] = v[i];
-                    
+                    v[i] = v[i + 1];
+                    v[n - 1] = 0;
                 }
                 Console.Write($"{v[i]} ");
 

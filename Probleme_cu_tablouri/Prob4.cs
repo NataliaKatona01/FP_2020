@@ -17,15 +17,20 @@ namespace Probleme_cu_tablouri
             int n = int.Parse(Console.ReadLine());
             int min, max;
             int m = int.Parse(Console.ReadLine());
-            min = m; max = m;
-            for (int i = 0; i < n; i++)
+            min = m ; max = m;
+            Random rnd = new Random(100);
+            int[] v = new int[100];
+            for (int i = 1; i < n; i++)
             {
-                int nr = int.Parse(Console.ReadLine());
-                if (nr < min)
-                    min = nr;
-                if (nr > max)
-                    max = nr;
+                v[i] = rnd.Next(100);
+                if (v[i] < min)
+                    min = v[i];
+                if (v[i] > max)
+                    max = v[i];
+                Console.Write($"{v[i]} ");
+
             }
+            Console.WriteLine();
             Console.WriteLine($"Cea mai mica valoare din vector este {min}, iar cea mai mare este {max}");
         }
     }

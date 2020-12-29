@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Probleme_cu_tablouri.Prob15</StartupObject>
+    <StartupObject>Probleme_cu_tablouri.Prob4</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
