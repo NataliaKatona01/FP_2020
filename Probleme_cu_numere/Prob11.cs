@@ -16,7 +16,7 @@ namespace Probleme_cu_numere
             while (n != 0 && n > 0)
             {
                 nr = n % 10;
-                Console.WriteLine($"{nr}");
+                Console.Write($"{nr} ");
                 n = n / 10;
             }
         }

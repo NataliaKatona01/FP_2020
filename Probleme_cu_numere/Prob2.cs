@@ -46,7 +46,7 @@ namespace Probleme_cu_numere
                 else
                 {
                     if (c == 0)
-                        Console.WriteLine("Identitate");
+                        Console.WriteLine("Solutie nedeterminata");
                     else
                         Console.WriteLine("Ecuatie imposibila");
                 }

@@ -14,31 +14,25 @@ namespace Probleme_cu_numere
         static void Main(string[] args)
         {
             int n = int.Parse(Console.ReadLine());
+            int a, b = -1;
+            bool ok = true;
+            a = n % 10;
+            n = n / 10;
 
-            int nr = n;
-            cifre(n);
-            Console.WriteLine();
-            egalitate();
-
-        }
-
-        private static void egalitate(int []v)
-        {
-            for (int i = 0; i <= 9; i++)
+            while (n != 0)
             {
-
-            }
-        }
-
-        private static void cifre(int n)
-        {
-            int cifra; ;
-            while (n > 0)
-            {
-                cifra = n % 10;
+                if (n % 10 != a && b == -1)
+                    b = n % 10;
+                if (n % 10 != a && n % 10 != b)
+                    ok = false;
                 n = n / 10;
-                Console.WriteLine(cifra);
             }
+            if(ok)
+                Console.WriteLine("Numarul este format doar cu 2 cifre");
+            else
+                Console.WriteLine("Numarul nu este format doar cu 2 cifre");
+
         }
+
     }
 }

@@ -14,14 +14,24 @@ namespace Probleme_cu_tablouri
         {
             Console.Write("n = ");
             int n = int.Parse(Console.ReadLine());
-            int[] v = new int[100];
-            Random rnd = new Random();
+            int[] v = new int[n];
 
             for (int i = 0; i < n; i++)
-            {
-                v[i] = rnd.Next(100);
+                 v[i] = int.Parse(Console.ReadLine());
 
-            }
+            for (int i = 0; i < n - 1; i++)
+                for (int j = i + 1; j < n; j++)
+                    if(v[i] == v[j])
+                    { 
+                        for (int k = j; k < n - 1; k++)
+                            v[k] = v[k + 1];
+                        n--;
+                    }
+            Array.Resize(ref v, n);
+            for (int i = 0; i < v.Length; i++)
+            {
+                Console.Write($"{v[i]} ");
+            } 
         }
     }
 }

@@ -17,8 +17,13 @@ namespace Probleme_cu_numere
             a = int.Parse(Console.ReadLine());
             b = int.Parse(Console.ReadLine());
             Console.WriteLine($"Ecuatia de gradul 1: {a}x + {b} = 0");
-            x = -b / a;
-            Console.WriteLine($"x = {x}");
+            if (a != 0)
+            {
+                x = -b / a;
+                Console.WriteLine($"x = {x}");
+            }
+            else
+                Console.WriteLine("x nedeterminat");
         }
     }
 }

@@ -19,8 +19,11 @@ namespace Probleme_cu_numere
             int b = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Inversarea valorilor: ");
-
-            Console.WriteLine($"a = {b} {Environment.NewLine}b = {a}");
+            a = a + b; 
+            b = a - b; 
+            a = a - b;
+            Console.WriteLine($"a = {a}");
+            Console.WriteLine($"b = {b}");
         }
     }
 }

@@ -16,36 +16,20 @@ namespace Probleme_cu_numere
             int b = int.Parse(Console.ReadLine());
             int c = int.Parse(Console.ReadLine());
 
-            int[] numere = { a, b, c };
+            if (a > b)
+                interschimbare(ref a, ref b);
+            if (a > c)
+                interschimbare(ref a, ref c);
+            if (b > c)
+                interschimbare(ref b, ref c);
+            Console.WriteLine($"{a} {b} {c}");
 
-            Array.Sort(numere);
-
-            foreach (int i in numere)
-                Console.WriteLine(i);
-
-            /*
-            if (a < b)
-            {
-                if (a < c)
-                {
-                    if (b < c)
-                        Console.WriteLine($"{a}, {b}, {c}");
-                    else
-                        Console.WriteLine($"{a}, {c}, {b}");
-
-                }
-                else
-                    Console.WriteLine($"{c}, {a}, {b}");
-            }
-            else
-            { 
-            if (a < c)
-                Console.WriteLine($"{b}, {a}, {c}");
-            else
-                Console.WriteLine($"{b}, {c}, {a}");
-            if (c < b)
-                Console.WriteLine($"{c}, {b}, {a}");
-            }    */
+        }
+        private static void interschimbare(ref int x, ref int y)
+        {
+            int aux = x;
+            x = y;
+            y = aux;
         }
     }
 }

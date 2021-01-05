@@ -18,10 +18,10 @@ namespace Probleme_cu_numere
             int b = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Inversarea valorilor: ");
-            int a1;
-            a1 = a;
+            int aux;
+            aux = a;
             a = b;
-            b = a1;
+            b = aux;
 
             Console.WriteLine($"a = {a} {Environment.NewLine}b = {b}" );
 

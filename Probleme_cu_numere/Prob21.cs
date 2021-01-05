@@ -17,14 +17,15 @@ namespace Probleme_cu_numere
             x = rnd.Next(1, 1024); 
             do
             {
-                Console.WriteLine("Dati un numar cuprins intre 1 si 2024: ");
+                Console.Write("Numarul este mai mare sau egal decat: ");
                
                 nr = int.Parse(Console.ReadLine());
-                if (nr > x) Console.WriteLine("Numar prea mare");
-                if (nr < x) Console.WriteLine("Numar prea mic");
+                if (x >= nr) Console.WriteLine("Da");
+                else
+                if (x < nr) Console.WriteLine("Nu");
             }
             while (nr != x);
-            Console.WriteLine($"Numarul selectat de calculator este: {x} ");
+            Console.WriteLine($"Numarul este: {x} ");
         }
     }
 }

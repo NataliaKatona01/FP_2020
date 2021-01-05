@@ -15,19 +15,27 @@ namespace Probleme_cu_tablouri
         {
             Console.Write("n = ");
             int n = int.Parse(Console.ReadLine());
-            int[] v = new int[100];
-            Random rnd = new Random();
+            int[] v = new int[n];
+            for (int i = 0; i < n; i++)
+                v[i] = int.Parse(Console.ReadLine());
+
             for (int i = 0; i < n; i++)
             {
-                v[i] = rnd.Next(100);
-                if (v[i] == 0)
+                if(v[i] == 0 && i != n - 1)
                 {
-                    v[i] = v[i + 1];
-                    v[n - 1] = 0;
-                }
-                Console.Write($"{v[i]} ");
+                    int j = i + 1;
+                    while (v[j] == 0 && j != n - 1)
+                        j++;
 
+                    int aux = v[i];
+                    v[i] = v[j];
+                    v[j] = aux;
+
+                }
+               
             }
+            for (int i = 0; i < n; i++)
+                 Console.Write($"{v[i]} ");  
         }
     }
 }
