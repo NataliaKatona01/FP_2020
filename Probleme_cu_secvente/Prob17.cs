@@ -15,28 +15,21 @@ namespace Probleme_cu_secvente
 
         static void Main(string[] args)
         {
-            Console.WriteLine("n = ");
+            Console.Write("n = ");
             int n = int.Parse(Console.ReadLine());
             int count = 0;
-            int nr1 = int.Parse(Console.ReadLine());
-            if (nr1 == 1)
-                Console.WriteLine("Secventa incorecta");
-            for (int i = 1; i < n - 1; i++)
+            bool ok = true;
+            for (int i = 0; i < n; i++)
             {
                 int nr = int.Parse(Console.ReadLine());
                 if (nr == 0)
                     count++;
                 if (nr == 1)
                     count--;
+                if (count < 0)
+                    ok = false;
             }
-            int nr2 = int.Parse(Console.ReadLine());
-            if (nr2 == 0)
-                Console.WriteLine("Secventa incorecta");
-            if (nr2 == 1)
-                count--;
-
-
-            if (count == 0)
+            if (count == 0 && ok)
                 Console.WriteLine("Secventa este corecta");
             else
                 Console.WriteLine("Secventa este incorecta");
