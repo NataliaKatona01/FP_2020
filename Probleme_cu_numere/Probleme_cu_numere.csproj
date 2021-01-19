@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Probleme_cu_numere.Prob20</StartupObject>
+    <StartupObject>Probleme_cu_numere.Prob17</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
