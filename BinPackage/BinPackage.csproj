@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{083BEC0C-ABB7-47D6-92B5-EB78A661A1CB}</ProjectGuid>
+    <ProjectGuid>{5021E536-2EFB-416B-BEB4-325BFB99F777}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Probleme_cu_tablouri</RootNamespace>
-    <AssemblyName>Probleme_cu_tablouri</AssemblyName>
+    <RootNamespace>BinPackage</RootNamespace>
+    <AssemblyName>BinPackage</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -32,9 +32,6 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject>Probleme_cu_tablouri.Prob25</StartupObject>
-  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -46,26 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Prob1.cs" />
-    <Compile Include="Prob10.cs" />
-    <Compile Include="Prob11.cs" />
-    <Compile Include="Prob12.cs" />
-    <Compile Include="Prob13.cs" />
-    <Compile Include="Prob14.cs" />
-    <Compile Include="Prob15.cs" />
-    <Compile Include="Prob16.cs" />
-    <Compile Include="Prob17.cs" />
-    <Compile Include="Prob2.cs" />
-    <Compile Include="Prob25.cs" />
-    <Compile Include="Prob28.cs" />
-    <Compile Include="Prob29.cs" />
-    <Compile Include="Prob3.cs" />
-    <Compile Include="Prob4.cs" />
-    <Compile Include="Prob5.cs" />
-    <Compile Include="Prob6.cs" />
-    <Compile Include="Prob7.cs" />
-    <Compile Include="Prob8.cs" />
-    <Compile Include="Prob9.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

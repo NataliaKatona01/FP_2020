@@ -12,8 +12,6 @@ namespace _13_0501
         static void Main(string[] args)
         {
              BS();
-
-
             MergeSort();
         }
 
